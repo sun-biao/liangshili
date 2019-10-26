@@ -13,8 +13,8 @@ phases:
       - mvn package
   post_build:
     commands:
+      - echo $(ls target)
       - echo Build completed on `date`
 artifacts:
   files:
-    - liangshili.war
     - target/my-app.jar
