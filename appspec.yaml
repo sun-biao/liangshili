@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: target/my-app.war
     destination: /opt/apache-tomcat-8.5.47/webapps
 
 hooks:
