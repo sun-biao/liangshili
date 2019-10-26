@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /opt/apache-tomcat-8.5.47/webapps
+
+hooks:
+  BeforeInstall:
+    - location: /opt/apache-tomcat-8.5.47/bin/shutdown.sh
+  AfterInstall:
+    - location: /opt/apache-tomcat-8.5.47/bin/startup.sh
+      timeout: 180
+  ApplicationStart:
+  ValidateService:
