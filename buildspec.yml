@@ -19,4 +19,4 @@ artifacts:
   files:
     - target/my-app.war
     - scripts/*.sh
-    - appspec.yaml
+    - appspec.yml
