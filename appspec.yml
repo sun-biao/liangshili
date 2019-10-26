@@ -4,6 +4,13 @@ files:
   - source: target/my-app.war
     destination: /opt/apache-tomcat-8.5.47/webapps
 permissions:
+  - object: /opt/apache-tomcat-8.5.47/webapps/
+    pattern: "*.war"
+    owner: ec2-user
+    group: ec2-user
+    mode: 755
+    type:
+      - file
   - object: /opt/apache-tomcat-8.5.47/webapps/my-app
     group: ec2-user
     mode: 755
