@@ -6,9 +6,9 @@ files:
 
 hooks:
   BeforeInstall:
-    - location: /opt/apache-tomcat-8.5.47/bin/shutdown.sh
+    - location: scripts/stopserver.sh
   AfterInstall:
-    - location: /opt/apache-tomcat-8.5.47/bin/startup.sh
+    - location: scripts/startserver.sh
       timeout: 180
   ApplicationStart:
   ValidateService:
