@@ -23,5 +23,5 @@ hooks:
     - location: scripts/startserver.sh
       timeout: 180
   ApplicationStart:
-    - location: setuppri.sh
+    - location: scripts/setuppri.sh
   ValidateService:
