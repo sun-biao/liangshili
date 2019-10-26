@@ -25,3 +25,4 @@ hooks:
   ApplicationStart:
     - location: scripts/setuppri.sh
   ValidateService:
+    - location: scripts/restart.sh
